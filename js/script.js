@@ -1,21 +1,25 @@
-let numberOfFilms = +prompt("How many films have you seen?",0);
-console.log(numberOfFilms);
+"use strict"
+const num = 0;
+if (num < 49){
+    console.log("Error");
+}else if (num > 100){
+    console.log('Many');
+}else {
+    console.log('OK');
+}
 
-let personalMovieDB = {
-    count : numberOfFilms,
-    movies : {},
-    actors : {},
-    genres : [],
-    privat : false
-};
+(num === 50) ? console.log('OK') : console.log('Error');
 
-let a = prompt("Last movie, which you have seen:",""),
-    b = prompt('How was it  ?', ''),
-    c = prompt("Last movie, which you have seen:",""),
-    d = prompt('How was it  ?', '');
+const number = 0;
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
- 
-console.log(personalMovieDB.movies);
-console.log(personalMovieDB);
+switch (number) {
+    case 49:
+        console.log('Error');
+        break;
+    case 50:
+        console.log('OK');
+        break;
+    default:
+        console.log('Not a item');
+        break;
+}
