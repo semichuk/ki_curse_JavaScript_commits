@@ -1,25 +1,16 @@
-"use strict"
-const num = 0;
-if (num < 49){
-    console.log("Error");
-}else if (num > 100){
-    console.log('Many');
-}else {
-    console.log('OK');
-}
+"use strict";
 
-(num === 50) ? console.log('OK') : console.log('Error');
+let num = 50;
+//while(x < 55){
 
-const number = 0;
+//}
 
-switch (number) {
-    case 49:
-        console.log('Error');
-        break;
-    case 50:
-        console.log('OK');
-        break;
-    default:
-        console.log('Not a item');
-        break;
+//do{
+//    console.log(num);
+//    num++;
+//}
+//while (num < 55); 
+for (let i = 1; i < 8; i++) {
+    console.log(num);
+    num++;
 }
