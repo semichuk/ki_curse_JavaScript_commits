@@ -1,34 +1,16 @@
 "use strict";
+const fruits = 'some fruit';
 
-let num = 15;
+//console.log(fruits.indexOf('6'));
 
-function saySomeThing(text)
-{
-    console.log(text);
-    num = 10;
-}
+const logg = 'hello';
 
-function plus(a,b)
-{
-    return (a + b);
-}
+//console.log(logg.slice(2,4));
 
-function reti()
-{
-    let num = 20;
-    return num;
-}
 
-const xreti = reti();
+//console.log(logg.substr(2,3));
 
-const x = function()
-{
-    console.log('hello expression');
-};
-
-const y = (a,g) => {a + g};
-
-const stri = 'testy';
-
-console.log(stri.toUpperCase());
-console.log(stri);
+const num = '10.5';
+//console.log(Math.round(num));
+//console.log(parseInt(num));
+console.log(parseFloat(num));
