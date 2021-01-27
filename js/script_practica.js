@@ -1,14 +1,42 @@
 "use strict";
 
-let numberOfFilms = 0;
+let numberOfFilms;
+
+
+
+function start()
+{
+    do
+    {
+        numberOfFilms = +prompt('how many?','');
+    }while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms));
+
+}
+
+
+
+
+
+
 
 const  DB = 
 {
     count: numberOfFilms,
-    movies:[]
+    movies:[],
+    actors:{},
+    genres:[],
+    privat: ''
 };
 
-let i = 0;
+
+
+
+
+
+
+function rememberMyFilms()
+{
+    let i = 0;
 
 while(++i < 2) 
 {
@@ -26,10 +54,19 @@ while(++i < 2)
     alert(a);
     
 }
+}
 
-numberOfFilms = prompt('how many?','');
 
-alert(typeof(numberOfFilms));
+
+
+
+
+
+
+
+
+
+function detectPersonalLevel(){
 
 if(numberOfFilms < 10)
 {
@@ -44,4 +81,33 @@ if(numberOfFilms < 10)
 {
     alert('error 304');
 }
-console.log(DB);
+}
+
+
+
+
+
+
+
+
+
+function showMyDB(privat)
+{
+    if(!privat)
+    {
+        console.log(DB);
+    }else
+    {
+        console.log('privat is true');
+    }
+}
+
+function writeYourGenres()
+{
+    for (let i = 1;i <= 3; i++) 
+    {
+        DB.genres[i - 1] = prompt(`Your the most love genre №${i}`);
+    }
+}
+
+writeYourGenres();
