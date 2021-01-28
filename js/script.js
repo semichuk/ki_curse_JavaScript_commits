@@ -1,16 +1,12 @@
-"use strict";
-const fruits = 'some fruit';
+'use strict';
 
-//console.log(fruits.indexOf('6'));
+function learnjs(lang, callback){
+    console.log(`I learn ${lang}`);
+    callback();
+}
 
-const logg = 'hello';
+function done(){
+    console.log('I have gone this curse');
+}
 
-//console.log(logg.slice(2,4));
-
-
-//console.log(logg.substr(2,3));
-
-const num = '10.5';
-//console.log(Math.round(num));
-//console.log(parseInt(num));
-console.log(parseFloat(num));
+learnjs('js',done);
