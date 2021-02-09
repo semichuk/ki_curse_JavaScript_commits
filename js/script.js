@@ -1,38 +1,13 @@
 'use strict';
 
-const obj={
-    name: 'test1',
-    age: 1,
-    types: {
-        border: 'black',
-        background: 'red'
-    },
-    makeTest: function() {
-        console.log('test');
-    }
-};
+const arr = [2,3,4,5,6,7];
 
-//console.log(obj['types']['border']);
+// arr.pop();
 
-// {
-    
-//     if(typeof(obj[key]) === 'object' )
-//     {
-        
-//         for (let i in obj[key]) 
-//         {
-//             console.log(`option ${i} have ${obj[key][i]}`);
-//             counter++;
-//         }
-//     }else
-//     {
-//     console.log(`option ${key} have ${obj[key]}`);
-//     counter++;
-//     }
-// }
-// console.log(counter);
-console.log(Object.keys(obj).length);
-
-const {background,border} = obj.types;
-
-console.log(background);
+// arr.push(11);
+// // console.log(arr);
+// arr[3] = 23;
+// console.log(arr);
+const str = prompt("","");
+const products = str.split('__');
+console.log(products);
