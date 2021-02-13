@@ -6,7 +6,21 @@ let personalMovieDB =
     movies:[],
     actors:{},
     genres:[],
-    privat: '',
+    privat: true,
+    
+    toggleVisibleMyDB: function() 
+    {
+
+            if(personalMovieDB.privat)
+            {
+                personalMovieDB.privat = false;
+            }
+            else
+            {
+                personalMovieDB.privat = true;
+            }
+    },
+
     start: function ()
     {
         do
@@ -29,7 +43,7 @@ let personalMovieDB =
         
             if (a != null && b != null && a != '' && b != '' && a.length < 50) 
         {
-            DB.movies[a] = b;
+            personalMovieDB.movies[a] = b;
             alert(i);
         }else 
         {
@@ -48,13 +62,13 @@ let personalMovieDB =
    
     detectPersonalLevel: function (){
 
-        if(numberOfFilms < 10)
+        if(personalMovieDB.count  < 10)
         {
             alert('you have few watched films');
-        }else if(numberOfFilms <= 30 && numberOfFilms >= 10 )
+        }else if(personalMovieDB.count  <= 30 && personalMovieDB.count  >= 10 )
         {
             alert('you have watched medium');
-        }else if(numberOfFilms > 30)
+        }else if(personalMovieDB.count > 30)
         {
             alert('you are cool guy');
         }else
@@ -69,7 +83,7 @@ let personalMovieDB =
     {
         if(!privat)
         {
-            console.log(DB);
+            console.log(personalMovieDB);
         }else
         {
             console.log('privat is true');
@@ -81,12 +95,29 @@ let personalMovieDB =
     {
         for (let i = 1;i <= 3; i++) 
         {
-            DB.genres[i - 1] = prompt(`Your the most love genre №${i}`);
+            
+            let genre = prompt(`Your the most love genre №${i}`);
+            if(genre === '' || genre === null)
+            {
+                console.log('The data is not correct');
+                i--;
+            }
+            else
+            {
+                personalMovieDB.genres[i - 1] = genre;
+
+            }
+    
         }
+        
+        personalMovieDB.genres.forEach((item, i) => {
+            console.log(`Your lovest genre #${i+1} is ${item}`);
+
+    
+        });
     }
     
 }
-
 
 
 
