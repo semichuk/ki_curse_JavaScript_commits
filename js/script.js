@@ -1,5 +1,16 @@
- 'use strict';
+  'use strict';
 const button = document.getElementsByClassName('button');
-const button2 = document.querySelector('#box2');
-button2.style.backgroundColor = 'blue';
-button[0].style.cssText = 'background-color : red;'
+ const button2 = document.querySelector('#box2');
+ button2.style.backgroundColor = 'blue';
+ button[0].style.cssText = 'background-color : red;';
+const but = document.createElement('button');
+ but.classList.add('black');
+//  document.querySelector('#box2').append(but);
+ // button2.prepend(but);
+// button2.before(but);
+// button2.after(but);
+// button2.remove();
+// button2.replaceWith(but);
+document.body.append(but);
+//but.innerHTML = '<h1>hello world</h1>';
+// but.textContent = ('<button></button>');
