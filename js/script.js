@@ -14,3 +14,5 @@ const but = document.createElement('button');
 document.body.append(but);
 //but.innerHTML = '<h1>hello world</h1>';
 // but.textContent = ('<button></button>');
+const button3 = document.querySelector('.button.large2 button');
+console.log(button3);
