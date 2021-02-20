@@ -1,18 +1,38 @@
   'use strict';
-const button = document.getElementsByClassName('button');
- const button2 = document.querySelector('#box2');
- button2.style.backgroundColor = 'blue';
- button[0].style.cssText = 'background-color : red;';
-const but = document.createElement('button');
- but.classList.add('black');
-//  document.querySelector('#box2').append(but);
- // button2.prepend(but);
-// button2.before(but);
-// button2.after(but);
-// button2.remove();
-// button2.replaceWith(but);
-document.body.append(but);
-//but.innerHTML = '<h1>hello world</h1>';
-// but.textContent = ('<button></button>');
-const button3 = document.querySelector('.button.large2 button');
-console.log(button3);
+ let button = document.querySelector(".button.large button");
+//  button.onclick = () =>
+//  {
+//    alert('hello ki f');
+//  }
+// let i = 0;
+//  const deleteElement = (e) =>
+//  {
+
+//   console.log(e.target);
+
+//   i++;
+
+//   if(i == 1)
+//     {
+//       button.removeEventListener('click', deleteElement)
+//     }
+// };
+
+//  button.addEventListener('click',deleteElement
+//  )
+//  ;
+
+ const link = document.querySelector('a'),
+ bns = document.querySelectorAll('button')
+ ;
+
+link.addEventListener('click',(e)=> 
+{
+  e.preventDefault();
+  console.log('error');
+});
+
+bns.forEach((item) => 
+{
+  item.addEventListener('click',() => {console.log('CLICK!!!!!!');});
+})
