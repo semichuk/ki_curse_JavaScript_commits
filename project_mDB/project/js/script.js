@@ -65,7 +65,7 @@ addForm.addEventListener('submit' , (event) =>
         if(favorite)
         {
 
-            console.log('enter love film');
+            alert('enter love film');
         }
     movieDB.movies.push(newFilm);
     sortArray(movieDB.movies);
