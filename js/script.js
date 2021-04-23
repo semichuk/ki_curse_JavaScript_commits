@@ -1,38 +1,18 @@
   'use strict';
- let button = document.querySelector(".button.large button");
-//  button.onclick = () =>
-//  {
-//    alert('hello ki f');
-//  }
-// let i = 0;
-//  const deleteElement = (e) =>
-//  {
+const now = new Date();
+// console.log(now.getFullYear());
 
-//   console.log(e.target);
+// console.log(now.getMonth());
 
-//   i++;
+// console.log(now.getDate());
 
-//   if(i == 1)
-//     {
-//       button.removeEventListener('click', deleteElement)
-//     }
-// };
+// console.log(now.getDay());
 
-//  button.addEventListener('click',deleteElement
-//  )
-//  ;
+// console.log(now.getTimezoneOffset());
 
- const link = document.querySelector('a'),
- bns = document.querySelectorAll('button')
- ;
+// console.log(now.getTime());
 
-link.addEventListener('click',(e)=> 
-{
-  e.preventDefault();
-  console.log('error');
-});
 
-bns.forEach((item) => 
-{
-  item.addEventListener('click',() => {console.log('CLICK!!!!!!');});
-})
+console.log(now.setHours(18));
+
+console.log(now);
