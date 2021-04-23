@@ -1,16 +1,16 @@
   'use strict';
 const now = new Date();
-// console.log(now.getFullYear());
+console.log(now.getFullYear());
 
-// console.log(now.getMonth());
+console.log(now.getMonth());
 
-// console.log(now.getDate());
+console.log(now.getDate());
 
-// console.log(now.getDay());
+console.log(now.getDay());
 
-// console.log(now.getTimezoneOffset());
+console.log(now.getTimezoneOffset());
 
-// console.log(now.getTime());
+console.log(now.getTime());
 
 
 console.log(now.setHours(18));
